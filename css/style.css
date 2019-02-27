@@ -11,10 +11,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
-ul {
+ul, ol {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 .clearfix::after {
     content: '';
@@ -154,4 +152,7 @@ ul {
     width: 30px;
     height: 30px;
     fill: white;
+}
+body > main .downloadResume {
+
 }
