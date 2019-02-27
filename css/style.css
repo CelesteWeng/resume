@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.topNavBar {
+    padding: 20px 16px;
+}
+.topNavBar > nav > ul {
+    float: right;
+    padding-top: 7px;
+}
+.topNavBar > nav > ul > li {
+    float: left;
+}
+.topNavBar > nav > ul > li > a {
+    display: block;
+    margin: 0 17px;
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #b7b7b7;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+.topNavBar > nav > ul > li > a:hover {
+    border-bottom: 3px solid #e06567;
+}
+.topNavBar .logo {
+    float: left;
+    padding: 3px 0 4px 0;
+    font-size: 24px;
+    font-family: Arial Black;
+    cursor: default;
+}
+.topNavBar .logo .rs {
+    margin-right: 4px;
+    color: #e6686a;
+}
+.topNavBar .logo .card {
+    color: #9a9da2;
+}
