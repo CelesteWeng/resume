@@ -5,35 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的简历</title>
+    <title>WENG 的简历</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="//at.alicdn.com/t/font_1063167_z9j6on5uxs.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div class="topNavBar clearfix">
-        <a href="javascript:;" class="logo">
-            <span class="rs">RS</span><span class="card">card</span>
-        </a>
-        <nav>
-            <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他</a></li>
-            </ul>
-        </nav>
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a href="javascript:;" class="logo">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="banner"></div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
     <main>
-        <div class="card">
-            <div class="picture">
-                <img src="" alt="头像">
-            </div>
-            <div class="text">
-                <div class="profile">
+        <div class="userCard">
+            <div class="profileAndText clearfix">
+                <div class="picture">
+                    <img src="./images/avatar.jpg" width="299" height="347" alt="头像">
+                </div>
+                <div class="text">
                     <span class="welcome">Hello</span>
                     <h1>翁海莹</h1>
                     <p>前端开发工程师</p>
@@ -50,16 +65,22 @@
                     </dl>
                 </div>
             </div>
+            <footer class="media">
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg></a>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg></a>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg></a>
+            </footer>
         </div>
-        <div class="media">
-            <a href="#"><img src="#" alt="111"></a>
-            <a href="#"><img src="#" alt="111"></a>
-            <a href="#"><img src="#" alt="111"></a>
-            <a href="#"><img src="#" alt="111"></a>
-            <a href="#"><img src="#" alt="111"></a>
-            <a href="#"><img src="#" alt="111"></a>
-            <a href="#"><img src="#" alt="111"></a>
-        </div>
+
 
         <a href="#" class="button">下载 PDF 简历</a>
 
@@ -93,8 +114,9 @@
             <div class="small"></div>
             <div class="small"></div>
         </div>
-        
+
     </section>
-    
+
 </body>
+
 </html>
