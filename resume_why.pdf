@@ -1,0 +1,9 @@
+npm init -y
+1. 装 webpack 使用 yarn 不用 npm
+2. npx webpack,warning
+在外面创建 webpack.config.js
+yarn webpack dev server
+npx webpack html plugin
+3. 同一个目录下，文件名不能相同
+4. css-loader >> style.loader
+node sass kkkkkkk

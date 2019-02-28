@@ -46,7 +46,7 @@
         <div class="userCard">
             <div class="profileAndText clearfix">
                 <div class="picture">
-                    <img src="./images/avatar.jpg" width="299" height="347" alt="头像">
+                    <!-- <img src="./images/avatar.jpeg" width="299" height="347" alt="头像"> -->
                 </div>
                 <div class="text">
                     <span class="welcome">Hello</span>
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <footer class="media">
-                <a href="javascript:;">
+                <a href="https://github.com/CelesteWeng" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
                     </svg></a>
@@ -82,41 +82,91 @@
             </footer>
         </div>
 
-        <div class="downloadResume">
-            <a href="./resume.pdf" class="downloadResume" download>下载 PDF 简历</a>
+        <div class="downloadResume-wrapper">
+            <a href="./resume_why.pdf" class="downloadResume" download>下载 PDF 简历</a>
         </div>
 
-        <p>
-            我的介绍巴拉巴拉<br>
+        <p class="selfIntroduction">
+            翁海莹 前端工程师，浙江理工大学，电子信息工程。 <br>
+            技能：Vue，Node.js，jQuery
         </p>
     </main>
-    <section>
+    <section class="skills">
         <h2>技能</h2>
-        <ol>
-            <li>HTML 5 &amp; CSS 3</li>
-            <li>JavaScirpt </li>
-            <li>jQuery</li>
-            <li>Vue</li>
-            <li>React</li>
-            <li>HTTP</li>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML 5 &amp; CSS 3</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JavaScirpt </h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>HTTP</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
         </ol>
     </section>
-    <section>
+    <section class="portfolio">
         <h2>作品集</h2>
         <nav>
-            <ol>
-                <li>所有 </li>
-                <li>框架</li>
-                <li>原生 JS &amp; CSS</li>
+            <ol class="clearfix">
+                <li id="portfolio1">所有 </li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生 JS &amp; CSS</li>
             </ol>
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
         </nav>
+        <script>
+            portfolio1.onclick = function () {
+                portfolioBar.className = 'bar state-1'
+            }
+            portfolio2.onclick = function () {
+                portfolioBar.className = 'bar state-2'
+            }
+            portfolio3.onclick = function () {
+                portfolioBar.className = 'bar state-3'
+            }
+        </script>
 
-        <div class="jobs">
-            <div class="big"></div>
-            <div class="small"></div>
-            <div class="small"></div>
+        <div class="works" style="height: 597px;">
+            <div class="big" style="top: 0; left: 0;">
+                <img src="./images/1.jpg" alt="作品1">
+            </div>
+            <div class="small" style="top: 0; left: 645px;">
+                <img src="./images/2.jpg" alt="作品2">
+            </div>
+            <div class="small" style="top: 312px; left: 645px;">
+                <img src="./images/3.jpg" alt="作品3">
+            </div>
         </div>
-
     </section>
 
 </body>
