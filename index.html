@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WENG 的简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="//at.alicdn.com/t/font_1063167_z9j6on5uxs.js"></script>
-    <style type="text/css">
-
-    </style>
-
 </head>
 
 <body>
@@ -27,9 +24,9 @@
                     <li class="navLi">
                         <a href="#sitePortfolio">作品</a>
                         <ul class="submenu">
-                            <li>作品1</li>
-                            <li>作品2</li>
-                            <li>作品3</li>
+                            <li>导航页</li>
+                            <li>画板</li>
+                            <li>轮播图</li>
                         </ul>
                     </li>
                     <li class="navLi">
@@ -142,43 +139,44 @@
     </section>
     <section data-show id="sitePortfolio" class="portfolio">
         <h2>作品集</h2>
-        <nav>
-            <ol class="clearfix">
-                <li id="portfolio1">所有 </li>
-                <li id="portfolio2">框架</li>
-                <li id="portfolio3">原生 JS &amp; CSS</li>
-            </ol>
-            <div id="portfolioBar" class="bar state-1">
-                <div class="bar-inner"></div>
-            </div>
-        </nav>
-        <script>
-            portfolio1.onclick = function () {
-                portfolioBar.className = 'bar state-1'
-            }
-            portfolio2.onclick = function () {
-                portfolioBar.className = 'bar state-2'
-            }
-            portfolio3.onclick = function () {
-                portfolioBar.className = 'bar state-3'
-            }
-        </script>
 
-        <div class="works" style="height: 597px;">
-            <div class="big" style="top: 0; left: 0;">
-                <img src="./images/1.jpg" alt="作品1">
+        <div id="mySlides">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="./images/works/nav-page.jpg" class="swiper-slide" alt="作品1">
+                    <img src="./images/works/canvas.jpg" class="swiper-slide" alt="作品2">
+                    <img src="./images/works/apple-style-slides.jpg" class="swiper-slide" alt="作品3">
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="small" style="top: 0; left: 645px;">
-                <img src="./images/2.jpg" alt="作品2">
-            </div>
-            <div class="small" style="top: 312px; left: 645px;">
-                <img src="./images/3.jpg" alt="作品3">
-            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
+    <section class="message">
+        <h2>留言</h2>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
-    <script src="./js/main.js"></script>
+        <ol id="messageList"></ol>
+        <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
+            <label for="">姓名</label>
+            <input type="text" name="name">
+            <label for="">内容</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+    <!-- 模块化 -->
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/smoothly-navigation.js"></script>
+    <script src="./js/init-swiper.js"></script>
+    <script src="./js/message.js"></script>
+
 
 </body>
 
